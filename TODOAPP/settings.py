@@ -5,10 +5,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-p-p^!_e+$za%k6-fnyo)acrx+oalh_49lkqpq)+9**tj$80k*7'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://django-todo20.herokuapp.com/',
-                 'localhost:8000', ]
+                 'localhost:8000', 'localhost', ]
 
 
 INSTALLED_APPS = [

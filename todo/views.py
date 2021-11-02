@@ -10,11 +10,14 @@ from .models import TODO
 
 
 def home(request):
+    form = AuthenticationForm()
+    context = {'form': form}
     if request.user.is_authenticated:
         user = request.user
         form = TODOForm()
         todos = TODO.objects.filter(user=user).order_by('priority')
         return render(request, 'index.html', context={'form': form, 'todos': todos})
+    return render(request, 'login.html',context)
 
 
 def login(request):
