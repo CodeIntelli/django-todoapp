@@ -6,7 +6,8 @@ SECRET_KEY = 'django-insecure-p-p^!_e+$za%k6-fnyo)acrx+oalh_49lkqpq)+9**tj$80k*7
 
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://django-todo20.herokuapp.com/',
+                 '127.0.0.1', 'localhost:8000', ]
 
 
 INSTALLED_APPS = [
